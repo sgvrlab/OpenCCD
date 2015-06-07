@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo1", "Demo1\Demo1.vcproj", "{5A6737C4-87F4-4439-A4E2-FECBB59D3C87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018} = {415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCCD", "..\Src\OpenCCD_VS2005.vcproj", "{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A6737C4-87F4-4439-A4E2-FECBB59D3C87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A6737C4-87F4-4439-A4E2-FECBB59D3C87}.Debug|Win32.Build.0 = Debug|Win32
+		{5A6737C4-87F4-4439-A4E2-FECBB59D3C87}.Release|Win32.ActiveCfg = Release|Win32
+		{5A6737C4-87F4-4439-A4E2-FECBB59D3C87}.Release|Win32.Build.0 = Release|Win32
+		{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}.Debug|Win32.ActiveCfg = Debug|Win32
+		{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}.Debug|Win32.Build.0 = Debug|Win32
+		{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}.Release|Win32.ActiveCfg = Release|Win32
+		{415E9D59-5EF9-4BF2-99D1-4ED76F7A4018}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
