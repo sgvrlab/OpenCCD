@@ -2,6 +2,7 @@
 
 #include "forceline.h"
 #include <assert.h>
+#include "vec3f.h"
 
 class vec3d {
 public:

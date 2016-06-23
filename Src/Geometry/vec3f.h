@@ -11,7 +11,7 @@
 #define     GLH_ZERO            float(0.0)
 #define     GLH_EPSILON         float(10e-6)
 #define		GLH_EPSILON_2		float(10e-12)
-#define     equivalent(a,b)     (((a < b + GLH_EPSILON) && (a > b - GLH_EPSILON)) ? true : false)
+//#define     equivalent(a,b)     (((a < b + GLH_EPSILON) && (a > b - GLH_EPSILON)) ? true : false)
 
 class Vec3f {
 public :

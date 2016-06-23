@@ -42,7 +42,10 @@ void CCD_Output::printSummary( void ){
 	printf("--------------------------------------\n") ;
 }
 
-int CCD_Output::getIntersetingVFs( intersectingVF* listVFs ){
+int CCD_Output::getIntersetingVFs( intersectingVF* &listVFs ){
+	// this pointer listVFs changed in this function
+	// but if without the reference(&), listVFs outside will not be changed.
+	// I have tested it.
 	listVFs = new intersectingVF[numVFs] ;
 	//#pragma omp parallel
 	for ( __int64 i = 0 ; i < numVFs ; i++ ) {
@@ -51,7 +54,8 @@ int CCD_Output::getIntersetingVFs( intersectingVF* listVFs ){
 	return numVFs ;
 }
 
-int CCD_Output::getIntersetingEEs( intersectingEE* listEEs ){
+int CCD_Output::getIntersetingEEs( intersectingEE* &listEEs ){
+	// the same as the listVFs
 	listEEs = new intersectingEE[numEEs] ;
 	//#pragma omp parallel
 	for ( __int64 i = 0 ; i < numEEs ; i++ ) {
