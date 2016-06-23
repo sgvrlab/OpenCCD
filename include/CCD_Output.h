@@ -66,7 +66,7 @@ public :
 	* @param listVFs	The pointer indicating the first address of array, containing the list of intersecting VF pairs
 	* @return			The number of of intersecting VF pairs
 	*/
-	int getIntersetingVFs ( intersectingVF* listVFs ) ;
+	int getIntersetingVFs ( intersectingVF* &listVFs ) ;
 
 	/**
 	* Get the list of intersecting Edge-Edge pairs.<br>
@@ -75,7 +75,7 @@ public :
 	* @param listVFs	The pointer indicating the first address of array, containing the list of intersecting EE pairs
 	* @return			The number of of intersecting EE pairs
 	*/
-	int getIntersetingEEs ( intersectingEE* listEEs ) ;
+	int getIntersetingEEs ( intersectingEE* &listEEs ) ;
 
 	/************************************************************************/
 	/* Add results                                                          */
